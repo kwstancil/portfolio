@@ -72,9 +72,10 @@
     </nav>
 
     <!-- Welcome Section -->
-    <header class="text-white">
+    <header class="text-white boss-image ">
       <div class="container text-center">
         <h1>Mapping Portfolio</h1>
+        <h2 class='fade-in'>A byline here would be nice. A mission statement, fav quote, etc.</h2>
       </div>
     </header>
 
@@ -82,11 +83,11 @@
     <section id="projects" class="bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="card h-100">
-              <a target="_blank" href = "https://kwstancil.github.io/global-covid-vaccine-apartheid/"
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj1"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/global-covid-vaccine-apartheid.PNG"
                   alt="Global Covid Vaccine Apartheid"
               /></a>
@@ -107,11 +108,30 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Global Covid Vaccine Apartheid</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/global-covid-vaccine-apartheid.PNG" class="mw-100" alt="Preview of map.">
+                  <h5>Visit <a href="#">map</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="card h-100">
               <a target="_blank" href = "https://kwstancil.github.io/poverty-usa-counties/"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/patterns-economic-hardship-us-counties.PNG"
                   alt="Patterns of Economic Hardship in the U.S."
               /></a>
@@ -129,11 +149,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="card h-100">
               <a target="_blank" href = "https://kwstancil.github.io/median-rent-usa-counties/"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/median-rent-us-counties.PNG"
                   alt="Renting in the USA"
               /></a>
@@ -151,11 +171,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="card h-100">
               <a target="_blank" href = "https://kwstancil.github.io/housing-patterns-ky/"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/housing-patterns-ky-counties.PNG"
                   alt="Housing Patterns in Kentucky Counties"
               /></a>
@@ -174,11 +194,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="card h-100">
               <a target="_blank" href = "https://kwstancil.github.io/renewable-energy-usa/"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/clean-energy-usa.PNG"
                   alt="Renewable Energy Production in the U.S."
               /></a>
