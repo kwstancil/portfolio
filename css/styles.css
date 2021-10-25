@@ -62,10 +62,10 @@ header h2 {
 }
 
 header h3 {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: black;
   text-align: right;
-  margin-bottom: 05px;
+  margin-bottom: 1px;
 }
 
 /* Consider adding drop shadows on header titles */
