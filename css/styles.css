@@ -30,7 +30,7 @@ header {
 }
 
 section {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .fit-image {
@@ -64,7 +64,7 @@ header h2 {
 header h3 {
   font-size: 0.7rem;
   color: black;
-  text-align: center;
+  text-align: right;
 }
 
 /* Consider adding drop shadows on header titles */
