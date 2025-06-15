@@ -1,2 +1,2 @@
 # map-portfolio
-https://kwstancil.github.io/map-portfolio
+https://kwstancil.github.io/portfolio
