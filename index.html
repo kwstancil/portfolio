@@ -10,7 +10,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Kenny Stancil's mapping portfolio</title>
+    <title>Kenny Stancil's portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -34,7 +34,7 @@
 
   </head>
 
-  <body id="page-top">
+  <body id="home">
 
     <!-- Navigation -->
     <nav
@@ -42,7 +42,7 @@
       id="mainNav"
     >
       <div class="container">
-        <a class="navbar-brand" href="#page-top"
+        <a class="navbar-brand" href="#home"
           >Kenny Stancil</a
         >
         <div class="float-end">
@@ -60,7 +60,10 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#mapping">Data Visualization</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#writing">Writing</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -83,14 +86,58 @@
       </div>
     </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="bg-light">
-      <div class="container">
+    <!-- Data Visualization Section -->
+    <section id="mapping" class="bg-light">
+      <div class="container text-center">
+        <h2>Selected visualizations</h2>
         <div class="row">
 
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="card h-100">
               <a href="#" data-bs-toggle="modal" data-bs-target="#proj1"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/home-insurance-crisis.PNG"
+                  alt="Mapping the Home Insurance Crisis"
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Mapping the Home Insurance Crisis</h4>
+                <p class="card-text">
+                  This project explores the home insurance crisis in the United States, enabling viewers to see
+                  how the escalating premiums and disappearing coverage are affecting communities nationwide.
+                </p>
+                <p>
+                  Both maps were made by joining U.S. Census Bureau shapefiles (ZIP Code Tabulation Areas and Counties) 
+                  with geocoded insurance data (from the Tresury Department's Federal Insurance Office and from a Senate Budget Committee investigation).
+                  The resulting GeoJSON files were converted to PM tiles and displayed using MapLibre. The corresponding tables were created
+                  in Datawrapper.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Mapping the Home Insurance Crisis</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/home-insurance-crisis.PNG" class="mw-100" alt="Preview of map.">
+                  <h5>Visit <a target="_blank" href="https://therevolvingdoorproject.org/mapping-the-home-insurance-crisis/">map</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj2"
                 ><img
                   class="card-img-top fit-image"
                   src="images/global-covid-19-vaccine-apartheid-2.PNG"
@@ -117,7 +164,7 @@
           </div>
 
           <!-- Modal for above card. -->
-          <div class="modal fade" id="proj1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="proj2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -126,52 +173,7 @@
                 </div>
                 <div class="modal-body">
                   <img src="images/global-covid-19-vaccine-apartheid-2.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/global-covid-19-vaccine-apartheid-storymap/">map</a></h5>
-                </div>
-                <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#proj2"
-                ><img
-                  class="card-img-top fit-image"
-                  src="images/global-covid-19-vaccine-apartheid.PNG"
-                  alt="Global Covid-19 Vaccine Apartheid"
-              /></a>
-              <div class="card-body">
-                <h4 class="card-title">Global Covid-19 Vaccine Apartheid</h4>
-                <p class="card-text">
-                  This map depicts unequal access to Covid-19 vaccines around the world, highlights whether
-                  governments support or oppose an initiative to temporarily suspend intellectual property
-                  restrictions to boost the supply of lifesaving doses, and shows where untapped
-                  vaccine production potential exists.
-                </p>
-                <p>
-                  It was generated in Leaflet using  GeoJSON files containing national vaccination rates
-                  (courtesy of Our World in Data), governments' positions on the TRIPS waiver proposal
-                  under negotiation at the WTO (courtesy of Doctors Without Borders), and the locations of
-                  idle mRNA manufacturing capacity (Doctors Without Borders and the Access IBSA project).
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for above card. -->
-          <div class="modal fade" id="proj2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="exampleModalLabel">Global Covid-19 Vaccine Apartheid</h2>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="images/global-covid-19-vaccine-apartheid.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/global-covid-19-vaccine-apartheid/">map</a></h5>
+                  <h5>Visit <a target="_blank" href="https://kwstancil.github.io/global-covid-19-vaccine-apartheid-storymap/">map</a></h5>
                 </div>
                 <!-- <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -210,7 +212,7 @@
                 </div>
                 <div class="modal-body">
                   <img src="images/us-unemployment-2001-2015.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/us-counties-unemployment-2001-2015/">map</a></h5>
+                  <h5>Visit <a target="_blank" href ="https://kwstancil.github.io/us-counties-unemployment-2001-2015/">map</a></h5>
                 </div>
                 <!-- <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -249,7 +251,7 @@
                 </div>
                 <div class="modal-body">
                   <img src="images/kenya-schooling-gender.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/kenya-primary-school-enrollment-gender/">map</a></h5>
+                  <h5>Visit <a target="_blank" href ="https://kwstancil.github.io/kenya-primary-school-enrollment-gender/">map</a></h5>
                 </div>
                 <!-- <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -261,164 +263,6 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="card h-100">
               <a href="#" data-bs-toggle="modal" data-bs-target="#proj5"
-                ><img
-                  class="card-img-top fit-image"
-                  src="images/ca-employment-2010.PNG"
-                  alt="Employment Patterns in California, 2010"
-              /></a>
-              <div class="card-body">
-                <h4 class="card-title">Employment Patterns in California, 2010</h4>
-                <p class="card-text">
-                  This map shows what percentage of civilians over the age of 15 were members of the paid labor force in each California county in 2010.
-                </p>
-                <p>
-                  It was generated in Leaflet using a GeoJson file produced by joining data from the U.S. Census Bureau with California county polygons.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for above card. -->
-          <div class="modal fade" id="proj5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="exampleModalLabel">Employment Patterns in California, 2010</h2>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="images/ca-employment-2010.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/california-employment-patterns-2010/">map</a></h5>
-                </div>
-                <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#proj6"
-                ><img
-                  class="card-img-top fit-image"
-                  src="images/patterns-economic-hardship-us-counties.PNG"
-                  alt="Economic Hardship in the U.S., 2019"
-              /></a>
-              <div class="card-body">
-                <h4 class="card-title">Economic Hardship in the U.S., 2019</h4>
-                <p class="card-text">
-                  This map documents the poverty rate in each U.S. county in 2019.
-                </p>
-                <p>
-                  It was generated in Leaflet using a GeoJson file produced by joining data from the U.S. Census Bureau's
-                  Small Area Income and Poverty Estimates (SAIPE) Program with U.S. county polygons.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for above card. -->
-          <div class="modal fade" id="proj6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="exampleModalLabel">Economic Hardship in the U.S., 2019</h2>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="images/patterns-economic-hardship-us-counties.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/poverty-usa-counties/">map</a></h5>
-                </div>
-                <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#proj7"
-                ><img
-                  class="card-img-top fit-image"
-                  src="images/median-rent-us-counties.PNG"
-                  alt="Renting in the U.S., 2015"
-              /></a>
-              <div class="card-body">
-                <h4 class="card-title">Renting in the U.S., 2015</h4>
-                <p class="card-text">
-                  This map shows average monthly rent prices in each U.S. county in 2015.
-                </p>
-                  It was generated in Leaflet using a GeoJson file produced by joining data from the U.S. Census Bureau with U.S. county polygons.
-                <p>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for above card. -->
-          <div class="modal fade" id="proj7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="exampleModalLabel">Renting in the U.S., 2015</h2>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="images/median-rent-us-counties.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/median-rent-usa-counties/">map</a></h5>
-                </div>
-                <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#proj8"
-                ><img
-                  class="card-img-top fit-image"
-                  src="images/housing-patterns-ky-counties.PNG"
-                  alt="Housing Patterns in Kentucky Counties, 2010"
-              /></a>
-              <div class="card-body">
-                <h4 class="card-title">Housing Patterns in Kentucky, 2010</h4>
-                <p class="card-text">
-                  This map portrays a variety of housing patterns across Kentucky, including the percentage
-                  of renters, mortgagors, outright owners, and vacant units in each county in 2010.
-                </p>
-                <p>
-                  It was generated in Leaflet using a GeoJson file produced by joining data from the U.S. Census Bureau with Kentucky county polygons.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal for above card. -->
-          <div class="modal fade" id="proj8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h2 class="modal-title" id="exampleModalLabel">Housing Patterns in Kentucky, 2010</h2>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="images/housing-patterns-ky-counties.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/housing-patterns-ky/">map</a></h5>
-                </div>
-                <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="card h-100">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#proj9"
                 ><img
                   class="card-img-top fit-image"
                   src="images/clean-energy-usa.PNG"
@@ -438,7 +282,7 @@
           </div>
 
           <!-- Modal for above card. -->
-          <div class="modal fade" id="proj9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="proj5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
@@ -447,7 +291,497 @@
                 </div>
                 <div class="modal-body">
                   <img src="images/clean-energy-usa.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a href="https://kwstancil.github.io/renewable-energy-usa/">map</a></h5>
+                  <h5>Visit <a target="_blank" href ="https://kwstancil.github.io/renewable-energy-usa/">map</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj6"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/lexington-landlords.PNG"
+                  alt="Lexington's Uneven Housing Landscape, 2015"
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Lexington's Uneven Housing Landscape, 2015</h4>
+                <p class="card-text">
+                This collaborative project provides a snapshot of housing injustice in Lexington, Kentucky, in the spring of 2015.
+                By mapping the spatial reach of major landlords, we showed how the scourge of housing unaffordability
+                in some of Lexington's poorest neighborhoods originates in much richer places (including some places 
+                beyond the borders of Fayette County).
+                </p>
+                <p>
+                  These static maps were produced by joining rental cost data from the U.S. Census Bureau with Lexington census tracts
+                  and ownership data from the Fayette County Property Valuation Administrator with city parcels.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Lexington's Uneven Housing Landscape, 2015</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/lexington-landlords.PNG" class="mw-100" alt="Preview of map.">
+                  <h5>Visit <a target="_blank" href ="https://drive.google.com/file/d/1rjO2DJUa1WVYI0k0MtS71k4JsU8EOSnd/view?usp=sharing">map</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Writing Section -->
+    <section id="writing" class="bg-light">
+      <div class="container text-center">
+        <h2>Selected articles</h2>
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj7"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tap-5-9-25.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">We Can't Count on Trump's SEC to Tell Us If He Is Manipulating the Market</h4>
+                <p class="card-text">
+                  This co-authored article, published in The American Prospect on May 9, 2025, explains why
+                  the Musk-damaged SEC is unlikely to investigate whether Trump and his allies are profiting 
+                  from advance knowledge about tariff changes or meme coin shenanigans.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tap-5-9-25.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://prospect.org/economy/2025-05-09-trump-sec-market-manipulation/">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj8"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tap-3-19-25.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">DOGE Is Going to Kill a Lot of Americans</h4>
+                <p class="card-text">
+                  This article, published in The American Prospect on March 19, 2025, urges Democratic officials
+                  to attribute preventable suffering and death to Elon Musk's hostile austerity initiative.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tap-3-19-25.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://prospect.org/environment/2025-03-19-doge-is-going-to-kill-a-lot-of-americans/">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj9"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tap-2-25-25.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Why Haven't House Democrats Moved to Impeach Scott Bessent?</h4>
+                <p class="card-text">
+                  This article, published in The American Prospect on February 25, 2025, makes the case that the
+                  Treasury Secretary is not telling the truth about DOGE's infiltration of the federal payments system.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tap-2-25-25.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://prospect.org/politics/2025-02-25-why-havent-house-democrats-moved-to-impeach-scott-bessent/">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj10"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tap-1-9-25.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Trump's Attack on Government Capacity Will Fan the Flames of the Home Insurance Crisis</h4>
+                <p class="card-text">
+                  This article, published in The American Prospect on January 9, 2025, argues that further slashing the resources 
+                  of the already underfunded and understaffed Forest Service is likely to unleash more severe wildfires.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tap-1-9-25.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://prospect.org/environment/2025-01-09-trumps-attack-government-home-insurance-wildfires/">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj11"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/rs-12-18-24.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Biden Must Free the Man Who Exposed Trump's Tax Avoidance</h4>
+                <p class="card-text">
+                  This co-authored article, published in Rolling Stone on December 18, 2024, called on Joe Biden 
+                  to commute the sentence of Charles Littlejohn, the IRS whistleblower who leaked the tax records
+                  of Donald Trump and other billionaires, before Trump could get revenge.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/rs-12-18-24.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://www.rollingstone.com/politics/political-commentary/biden-trump-charles-littlejohn-tax-whistleblower-1235209489/">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj12"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tap-11-4-24.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">The Climate Crisis Is a Cost-of-Living Crisis</h4>
+                <p class="card-text">
+                  This article, published in The American Prospect on November 4, 2024, describes how
+                  the climate crisis is making life more expensive for working households.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tap-11-4-24.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://prospect.org/environment/2024-11-04-climate-crisis-cost-of-living/">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj13"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tnr-10-11-24.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">What Harris Needs to Say About Hurricanes</h4>
+                <p class="card-text">
+                  This article, published in The New Republic on October 11, 2024, urged Kamala Harris
+                  to tell a compelling story about the escalating and deeply intertwined
+                  climate, housing, and insurance crises that might resonate with voters of all stripes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tnr-10-11-24.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://newrepublic.com/article/187033/harriz-walz-hurricane-milton-hurricane-helene-insurance">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj14"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tap-4-16-24.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Democrats Must Start Distinguishing Themselves on Insurance Policy</h4>
+                <p class="card-text">
+                  This co-authored article, published in The American Prospect on April 16, 2024, contends that one way for Democrats
+                  to pursue climate action in the face of Republican intransigence is to center the home insurance crisis, a manifestation
+                  of climate change that is already affecting millions of voters.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tap-4-16-24.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://prospect.org/economy/2024-04-16-democrats-homeowners-insurance-policy/">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj15"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/jacobin-3-27-24.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Jerome Powell's Fingerprints Are on the Next Banking Crisis</h4>
+                <p class="card-text">
+                  This article, published in Jacobin on March 27, 2024, details Federal Reserve Chair Jerome Powell's efforts
+                  to obstruct the finalization of tougher capital requirements for big banks—one year after his deregulatory moves
+                  contributed to the spring 2023 banking crisis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/jacobin-3-27-24.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://jacobin.com/2024/03/jerome-powell-federal-reserve-banking">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj16"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/slate-3-25-24.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Why Biden Should Pardon the IRS Whistleblower Who Leaked Trump's Taxes</h4>
+                <p class="card-text">
+                  This article, published in Slate on March 25, 2024, urged Joe Biden to pardon IRS whistleblower Charles Littlejohn—to rectify his disproportionate sentence, and because foregrounding billionaires' unchecked 
+                  economic and political power in the 2024 presidential election would be good politics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/slate-3-25-24.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://slate.com/news-and-politics/2024/03/trump-taxes-irs-whistleblower-littlejohn-billionaires-musk-bezos-biden.html">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj17"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tnr-2-21-24.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">A Return to Trump's Housing Policies Would Be a Disaster</h4>
+                <p class="card-text">
+                  This article, published in The New Republic on February 21, 2024, recounts
+                  the myriad injustices unleashed by Trump's HUD Secretary, Ben Carson.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj17" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tnr-2-21-24.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://newrepublic.com/article/178952/trump-hud-housing-policy-disaster">article</a></h5>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 portfolio-item">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj18"
+                ><img
+                  class="card-img-top fit-image"
+                  src="images/tap-12-14-23.PNG"
+                  alt=""
+              /></a>
+              <div class="card-body">
+                <h4 class="card-title">Corporate Headhunters Shouldn't Control Who Can Be a Fed Reserve Bank President</h4>
+                <p class="card-text">
+                  This co-authored article, published in The American Prospect on December 14, 2023, explains the powerful role that executive headhunters play in
+                  determining who leads regional Fed banks and argues for a democratic appointment process instead. 
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal for above card. -->
+          <div class="modal fade" id="proj18" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="images/tap-12-14-23.PNG" class="mw-100" alt="Preview of article.">
+                  <h5>Read <a target="_blank" href ="https://prospect.org/power/2023-12-14-corporate-headhunters-fed-bank-presidents/">article</a></h5>
                 </div>
                 <!-- <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
