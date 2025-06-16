@@ -106,14 +106,27 @@
               <div class="card-body">
                 <h4 class="card-title">Mapping the Home Insurance Crisis</h4>
                 <p class="card-text">
-                  This project explores the home insurance crisis in the United States, enabling viewers to see
-                  how rising premiums and disappearing coverage are affecting communities nationwide.
+                  This collaborative project combines interactive visuals and text to explore the home insurance crisis 
+                  in the United States, enabling viewers to see how rising premiums, disappearing coverage, and other negative trends 
+                  are affecting communities nationwide.
                 </p>
                 <p>
-                  Both maps were made by joining U.S. Census Bureau shapefiles (ZIP Code Tabulation Areas and Counties) 
-                  with geocoded insurance data (from the Treasury Department's Federal Insurance Office and from a Senate Budget Committee investigation).
-                  The resulting GeoJSON files were converted to PM tiles and displayed using MapLibre. The corresponding tables were created
-                  in Datawrapper.
+                  The project features multiple interactive tools. Map 1, built using ZIP code-level data released
+                  by Treasury's Federal Insurance Office, reveals how the U.S. home insurance crisis has unfolded from
+                  2018 to 2022 according to seven metrics of insurance availability and affordability
+                  (nonrenewal rates, nonpayment cancellation rates, other cancellation rates, claim frequency rates, 
+                  average claim amounts, paid loss ratios, and average premiums). Tables 1 through 7 show which ZIP codes
+                  experienced the biggest percent increases in each of the seven aforementioned metrics (there are also links
+                  to full databases that are sortable and searchable). Map 2, built using county-level data obtained through
+                  a Senate Budget Committee investigation, depicts how nonrenewal rates changed from 2018 to 2023.
+                  Table 8 shows which counties experienced the largest growth in nonrenewal rates during that period,
+                  and Table 9 shows statewide average nonrenewal rates.
+                </p>
+                  <p>
+                  Both maps were made by joining Census Bureau shapefiles (i.e., ZIP code tabulation areas and counties) 
+                  with geocoded ZIP code- and county-level insurance data. The resulting GeoJSON files were converted to PM tiles 
+                  and displayed using MapLibre. The corresponding tables were created in Datawrapper.
+                  </p>
                 </p>
               </div>
             </div>
@@ -129,9 +142,7 @@
                 </div>
                 <div class="modal-body">
                   <img src="images/home-insurance-crisis.PNG" class="mw-100" alt="Preview of map.">
-                  <h5>Visit <a target="_blank" href="https://therevolvingdoorproject.org/mapping-the-home-insurance-crisis/">project</a> (includes all maps and tables)</h5>
-                  <h5>Visit <a target="_blank" href="https://kwstancil.github.io/FIO-home-insurance-map/">ZIP code-level map</a></h5>
-                  <h5>Visit <a target="_blank" href="https://kwstancil.github.io/SBC-home-insurance-map/">county-level map</a></h5>
+                  <h5>Visit <a target="_blank" href="https://therevolvingdoorproject.org/mapping-the-home-insurance-crisis/">project</a></h5>
                 </div>
                 <!-- <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -198,8 +209,8 @@
               <div class="card-body">
                 <h4 class="card-title">Global Climate Apartheid</h4>
                 <p class="card-text">
-                  This storymap explores three dimensions of climate injustice: 1. uneven responsibility for causing the crisis, 2. worse consequences for those who are least culpable,
-                  and 3. militaristic responses, including strengthened border enforcement aimed at barring climate migrants.
+                  This storymap explores three dimensions of climate injustice: uneven responsibility for causing the crisis, worse consequences for those who are least culpable,
+                  and militaristic responses, including strengthened border enforcement aimed at barring climate migrants.
                 </p>
                 <p>
                   The visualization contains information about national greenhouse gas emissions (Our World in Data), per capita emissions by income (Chancel, 2022),
@@ -841,16 +852,18 @@
           <div class="col-md-6">
             <h3>Skills</h3>
             <dl>
+              <dt>Data wrangling</dt>
+              <dd>Excel, LibreOffice Calc for data cleaning, analysis, and preparation</dd>
               <dt>GIS</dt>
               <dd>ArcGIS, QGIS for data analysis, manipulation, and format conversion</dd>
               <dd>PostGIS/SQL for data querying</dd>
               <dt>Web Mapping</dt>
               <dd>
-                Leaflet, D3, Carto, Mapbox
+                Mapbox, MapLibre, Leaflet, D3, Carto
               </dd>
               <dt>Other Data Visualization Tools</dt>
               <dd>
-                Datawrapper, Flourish
+                Datawrapper, Flourish, StoryMapJS, TimelineJS
               </dd>
               <dt>Coding</dt>
               <dd>HTML, CSS, JavaScript</dd>
